@@ -1,0 +1,22 @@
+{
+  "name": "@8x8/create-mfe",
+  "version": "0.0.8",
+  "description": "8x8 micro-frontend boilerplate",
+  "type": "module",
+  "bin": "./index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a-rattana/cra-mf.git"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.0.0",
+    "execa": "^6.1.0",
+    "fs-extra": "^10.0.1",
+    "ora": "^6.1.0"
+  }
+}
