@@ -1,13 +1,13 @@
 {
   "name": "@8x8/create-mfe",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "8x8 micro-frontend boilerplate",
   "type": "module",
   "bin": "./index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/a-rattana/cra-mf.git"
+    "url": "https://github.com/8x8/create-mfe.git"
   },
   "engines": {
     "node": ">=14"

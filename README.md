@@ -1,9 +1,11 @@
-# cra-mf
+# @8x8/create-mfe
 
-Module federation for create-react-app using craco
+Micro-frontend scaffolding for react apps built using create-react-app with craco and module federation
 
 ## Available Scripts
 
 Using npx, you can run:
 
-### `npx cra-mf my-app`
+### `npx github:8x8/create-mfe my-app`
+
+### `npx github:8x8/create-mfe my-app --template typescript`
