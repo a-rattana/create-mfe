@@ -31,7 +31,7 @@ new Command()
         chalk.green(`Creating react app with module federation: ${name}\n`)
       )
       const tempDir = `_tmp_${Date.now()}`
-      await execa("npx", ["degit", "a-rattana/cra-mf", tempDir])
+      await execa("npx", ["degit", "8x8/create-mfe", tempDir, "--mode=git"])
       process.chdir(`./${tempDir}/templates/${options.template}`)
 
       // Modify package.json
