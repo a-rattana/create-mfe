@@ -32,16 +32,17 @@ new Command()
       )
       const tempDir = `_tmp_${Date.now()}`
       await execa("npx", ["degit", "8x8/create-mfe", tempDir, "--mode=git"])
-      process.chdir(`./${tempDir}/templates/${options.template}`)
+      const templateDir = `./${tempDir}/templates/${options.template}`
 
       // Modify package.json
-      const file = "package.json"
+      const file = templateDir + "/package.json"
       const packageJson = fse.readFileSync(file, "utf8")
       const content = JSON.parse(packageJson)
       content.name = name
       fse.writeFileSync(file, JSON.stringify(content, null, 2))
-      process.chdir("../../../")
-      fse.copySync(`./${tempDir}/templates/${options.template}`, `./${name}`)
+
+      // Copy template over & cleanup
+      fse.copySync(templateDir, `./${name}`)
       fse.removeSync(`./${tempDir}`)
       spinner.succeed()
 
